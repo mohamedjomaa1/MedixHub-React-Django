@@ -1,6 +1,9 @@
 from rest_framework import serializers
 from .models import Category, Manufacturer, Drug, StockTransaction
 from users.serializers import UserSerializer
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
 
 class CategorySerializer(serializers.ModelSerializer):
     """Serializer for drug categories."""

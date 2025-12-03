@@ -2,6 +2,10 @@ from rest_framework import serializers
 from .models import Prescription, PrescriptionItem
 from users.serializers import UserSerializer
 from inventory.serializers import DrugListSerializer
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
+
 
 class PrescriptionItemSerializer(serializers.ModelSerializer):
     """Serializer for prescription items."""

@@ -2,6 +2,7 @@ from django.contrib.auth.models import AbstractUser, BaseUserManager
 from django.db import models
 from django.core.validators import RegexValidator
 
+
 class UserManager(BaseUserManager):
     """Custom user manager for email-based authentication."""
     

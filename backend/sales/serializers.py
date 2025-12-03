@@ -2,6 +2,11 @@ from rest_framework import serializers
 from .models import Sale, SaleItem, PaymentHistory
 from users.serializers import UserSerializer
 from inventory.models import Drug
+from prescriptions.models import Prescription
+
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
 
 class SaleItemSerializer(serializers.ModelSerializer):
     """Serializer for sale items."""
