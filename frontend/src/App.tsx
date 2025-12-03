@@ -7,11 +7,11 @@ import { AuthProvider, useAuth } from './contexts/AuthContext';
 // Pages
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
-//import Drugs from './pages/Drugs';
-//import Prescriptions from './pages/Prescriptions';
-//import Sales from './pages/Sales';
-//import Users from './pages/Users';
-//import Reports from './pages/Reports';
+import Drugs from './pages/Drugs';
+import Prescriptions from './pages/Prescriptions';
+import Sales from './pages/Sales';
+import Users from './pages/Users';
+import Reports from './pages/Reports';
 import Layout from './components/Layout';
 
 // Create a client
